@@ -1,16 +1,47 @@
-package.com.company
+package com.company;
+public class Main {
 
-import javax.swing.Jframe;
-import javax.swing.WindowConstants;
+    chooseMethod choose = new chooseMethod();
 
-public class frameOne {
+    volumeOfRevolution volume = new volumeOfRevolution();
 
-public static void main(String args[]){
+    areaChoose aC = new areaChoose();
 
-JFrame frame1 = new JFrame ("my first frame");
+    areaSine aS = new areaSine();
+    areaCosine aCS = new areaCosine();
+    areaLinear aL = new areaLinear();
+    areaQuad aQ = new areaQuad();
 
-frame1.setVisible (true);
+    public static void main(String[] args) {
 
-frame1.setSize (500, 500);
+        chooseMethod choose = new chooseMethod();
 
-frame1.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        volumeOfRevolution volume = new volumeOfRevolution();
+
+        areaChoose aC = new areaChoose();
+
+        areaSine aS = new areaSine();
+        areaCosine aCS = new areaCosine();
+        areaLinear aL = new areaLinear();
+        areaQuad aQ = new areaQuad();
+
+
+        GUIframe aFrame = new GUIframe();
+        aFrame.setVisible(true);
+
+        choose.setVisible(false);
+
+        volume.setVisible(false);
+
+        aC.setVisible(false);
+
+        aS.setVisible(false);
+        aCS.setVisible(false);
+        aL.setVisible(false);
+        aQ.setVisible(false);
+
+
+    }
+
+
+}
